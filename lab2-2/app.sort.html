@@ -1,0 +1,24 @@
+<h3>--Sorting Employees---</h3>
+
+<table border=8 >
+    <tr>
+       <th> <a (click)="sortById()">   Id</a></th>
+       <th> <a (click)="sortByName()">   Name</a></th>
+       <th> <a (click)="sortBySal()">   Salary</a></th>
+       <th> <a (click)="sortByDept()">   Department</a></th>
+       <th> <a (click)="sortByJoiningDate()">   Date of Joining</a></th>
+       
+   
+    </tr>
+
+    <tr *ngFor="let data of empAll;let i=index">
+        <td>{{data.empId}}</td>
+        <td>{{data.empName}}</td>
+        <td>{{data.empSal}}</td>
+        <td>{{data.empDep}}</td>
+        <td>{{data.empjoiningdate}}</td>
+        
+        
+      </tr>
+</table>
+<br><br>

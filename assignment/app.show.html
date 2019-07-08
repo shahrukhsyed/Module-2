@@ -1,0 +1,15 @@
+<h2>Show all Employee</h2>
+
+<table border=1 >
+    <tr>
+        <th>Employee Id</th>
+        <th>Employee Name</th>
+        <th>Employee Salary</th>
+    </tr>
+
+    <tr *ngFor="let data of array">
+      <td>{{data.empId}}</td>
+      <td>{{data.empName}}</td>
+      <td>{{data.empSalary}}</td>
+    </tr>
+</table>

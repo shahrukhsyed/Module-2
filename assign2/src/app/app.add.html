@@ -1,0 +1,40 @@
+
+  <table>
+      <tr>
+          <td>
+            Employee Id
+          </td>
+          <td>
+            <input type="text" [(ngModel)]="empId"/> 
+          </td>
+      </tr>
+      
+      <tr>
+        <td>
+          Employee Name
+        </td>
+        <td>
+          <input type="text" [(ngModel)]="empName"/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+          Employee Salary
+        </td>
+        <td>
+          <input type="text" [(ngModel)]="empSalary"/>
+        </td>
+    </tr>
+   
+
+    <tr>
+        <td>
+            <input type="button" value="Add Data" (click)="addEmployee()" />
+        </td>
+    </tr>
+    
+  </table>
+  <div *ngIf="flag">
+      <show-emp [name]="empName" [id]="empId" [salary]="empSalary"></show-emp>
+  </div>
+ 

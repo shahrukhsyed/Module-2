@@ -1,0 +1,16 @@
+
+
+<table border="5">
+    <tr>
+        <th>Book Id</th>
+        <th>Book Title</th>
+        <th>Book Author</th>
+        <th>Book Year of Publish</th>
+    </tr>
+    <tr *ngFor="let em of empShowAll">
+        <td>{{em.id}}</td>
+        <td>{{em.title}}</td>     
+        <td>{{em.year}}</td>
+        <td>{{em.author}}</td>
+    </tr>
+</table>

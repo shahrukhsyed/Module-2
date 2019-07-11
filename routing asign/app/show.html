@@ -1,0 +1,19 @@
+<h1>Show Employee</h1>
+
+<table border=3>
+    <tr>
+        <th>Employee Id</th>
+        <th>Employee Name</th>
+        <th>Employee Salary</th>
+        <th>Employee Department</th>
+    </tr>
+
+    <tr *ngFor="let emp of empAll">
+        <td>{{emp.empId}}</td>
+        <td>{{emp.empName | checkmyown}}</td>     
+        <td>{{emp.empSal | currency:'INR':true }}</td>
+        <td>{{emp.empDep | lowercase}}</td>
+    </tr>
+</table>
+
+Data to search is {{data}}
